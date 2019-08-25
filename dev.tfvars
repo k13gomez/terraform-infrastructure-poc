@@ -1,4 +1,5 @@
-env         = "dev"
-env_profile = "default"
-env_region  = "us-east-1"
-
+env          = "dev"
+env_profile  = "default"
+env_region   = "us-east-1"
+stack_name   = "lambda"
+private_cidr = "10.10.0.0/16"
