@@ -1,5 +1,5 @@
 resource "aws_vpc" "network_vpc" {
-  cidr_block = "${var.private_network_cidr_base}.0.0/16"
+  cidr_block = "${var.network_vpc_cidr}"
 
   tags = {
     Name = "${var.stack_name}-vpc"

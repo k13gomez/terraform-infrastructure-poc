@@ -10,10 +10,30 @@ variable "stack_name" {
   type = string
 }
 
-variable "private_network_cidr_base" {
+variable "network_vpc_cidr" {
   type = string
 }
 
-variable "public_network_cidr_base" {
+variable "private_subnet_a_cidr" {
+  type = string
+}
+
+variable "private_subnet_b_cidr" {
+  type = string
+}
+
+variable "private_subnet_c_cidr" {
+  type = string
+}
+
+variable "public_subnet_a_cidr" {
+  type = string
+}
+
+variable "public_subnet_b_cidr" {
+  type = string
+}
+
+variable "public_subnet_c_cidr" {
   type = string
 }
