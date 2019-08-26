@@ -27,3 +27,11 @@ resource "aws_subnet" "public_subnet_c" {
     Name = "${var.network_name}-public-subnet-c"
   }
 }
+
+resource "aws_internet_gateway" "igwy" {
+  vpc_id = "${aws_vpc.network_vpc.id}"
+
+  tags = {
+    Name = "${var.network_name}-internet-gateway"
+  }
+}
