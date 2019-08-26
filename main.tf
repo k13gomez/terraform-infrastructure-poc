@@ -1,3 +1,8 @@
+provider "aws" {
+  profile = var.env_profile
+  region  = var.env_region
+}
+
 resource "aws_vpc" "network_vpc" {
   cidr_block = "${var.network_vpc_cidr}"
 
