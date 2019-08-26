@@ -2,7 +2,7 @@ resource "aws_route_table" "public_rt" {
   vpc_id = "${aws_vpc.network_vpc.id}"
 
   tags = {
-    Name = "${var.stack_name}-public-route-table"
+    Name = "${var.network_name}-public-route-table"
   }
 }
 
